@@ -5,24 +5,36 @@
     <title>Simple website</title>
     <link rel="stylesheet" href="assests/css/main.css">
     <script src="assests/js/main.js"></script>
-    <script src="assests/js/navbar.js"></script>
 </head>
 <body>
+    <!-- COOKIE -->
+    <div id="overlay"></div>
+
+    <div id="cookiePopup">
+        <h2>Cookie Indstillinger</h2>
+        <p>Vi bruger cookies til at forbedre din oplevelse. Vælg venligst dine præferencer.</p>
+        
+        <label><input type="radio" name="cookieType" value="all" checked> Alle cookies</label><br>
+        <label><input type="radio" name="cookieType" value="promotional"> Kun nødvendige og promotions</label><br>
+        <label><input type="radio" name="cookieType" value="needed"> Kun nødvendige</label><br>
+    
+        <button id="acceptCookies">Accepter</button>
+    </div>
     <!-- MAIN HEADER  -->
     <header class="heading">
         <h1>Simpel website med cookie</h1>
     </header>
     <!-- GLOBAL NAV  -->
     <nav class="nav-main">
-        <button class="menu-toggle" >☰</button>
+        <!-- <button class="menu-Toggle">☰</button> -->
         <ul class="nav-list">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="#home"></a>Hjem</li>
+            <li><a href="#kontakt">Kontakt info</a></li>
+            <li><a href="#farvel">hi</a></li>
         </ul>
         <ul>
-            <li></li>
-            <li></li>
+            <li><a href="#sign up"></a>sign up</li>
+            <li><a href="#register"></a>register</li>
         </ul>
     </nav>
     <!-- MAIN CONTENT  -->
@@ -31,23 +43,23 @@
             <h2>Simpel Bil galleri</h2>
         </header>
         <!-- CAR GALLERY -->
-        <section id="carGallery">
+       <section class="carGallery">
             <section id="thumbs">
-                <img class="imgTile" src="assets/img/cars1.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars2.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars3.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars4.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars5.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars6.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars7.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars8.jpg" alt="">
-                <img class="imgTile" src="assets/img/cars9.jpg" alt="">
-            </section>
-            <section id="bigimage">
-                <img id="big" src="assets/img/cars10.jpg" alt="">
-            </section>
-    
+            <img src="assests/img/cars1.jpg" alt="">
+            <img src="assests/img/cars2.jpg" alt="">
+            <img src="assests/img/cars3.jpg" alt="">
+            <img src="assests/img/cars3.jpg" alt="">
+            <img src="assests/img/cars4.jpg" alt="">
+            <img src="assests/img/cars5.jpg" alt="">
+            <img src="assests/img/cars6.jpg" alt="">
+            <img src="assests/img/cars7.jpg" alt="">
+            <img src="assests/img/cars8.jpg" alt="">
+            <img src="assests/img/cars9.jpg" alt="">
         </section>
+            <section id="bigimage">
+                <img id="big" src="assests/img/cars10.jpg" alt="">
+            </section>
+       </section>
     </main>
         <!-- GLOBAL FOOTER  -->
         <footer class="global-footer">
@@ -58,5 +70,6 @@
                 <li></li>
             </ul>
         </footer>
+        
 </body>
 </html>
