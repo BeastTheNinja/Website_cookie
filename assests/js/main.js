@@ -99,5 +99,5 @@ thumbs.forEach((thumb) => {
         if (!localStorage.getItem("cookiePreference")) {
             window.location.href = "https://en.wikipedia.org/wiki/Cookie_Monster"; // Ændr til din ønskede URL
         }
-    }, 50000); // 5 sekunder
+    }, 5000000); // 5 sekunder
 //----------------------------------------------------------------------------------------------------------------------------------------
