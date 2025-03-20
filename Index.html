@@ -4,22 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple website</title>
     <link rel="stylesheet" href="assests/css/main.css">
-    <script src="assests/js/main.js"></script>
+    <script src="assests/js/main.js" defer></script>
 </head>
 <body>
-    <!-- COOKIE -->
-    <div id="overlay"></div>
-
-    <div id="cookiePopup">
-        <h2>Cookie Indstillinger</h2>
-        <p>Vi bruger cookies til at forbedre din oplevelse. Vælg venligst dine præferencer.</p>
-        
-        <label><input type="radio" name="cookieType" value="all" checked> Alle cookies</label><br>
-        <label><input type="radio" name="cookieType" value="promotional"> Kun nødvendige og promotions</label><br>
-        <label><input type="radio" name="cookieType" value="needed"> Kun nødvendige</label><br>
-    
-        <button id="acceptCookies">Accepter</button>
-    </div>
     <!-- MAIN HEADER  -->
     <header class="heading">
         <h1>Simpel website med cookie</h1>
@@ -70,6 +57,18 @@
                 <li></li>
             </ul>
         </footer>
+         <!-- COOKIE -->
+    <div id="overlay"></div>
+
+    <div id="cookiePopup">
+        <h2>Cookie Indstillinger</h2>
+        <p>Vi bruger cookies til at forbedre din oplevelse. Vælg venligst dine præferencer.</p>
         
+        <label><input type="radio" name="cookieType" value="all" checked> Alle cookies</label><br>
+        <label><input type="radio" name="cookieType" value="promotional"> Kun nødvendige og promotions</label><br>
+        <label><input type="radio" name="cookieType" value="needed"> Kun nødvendige</label><br>
+    
+        <button id="acceptCookies">Accepter</button>
+    </div>
 </body>
 </html>

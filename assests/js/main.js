@@ -13,34 +13,33 @@ thumbs.forEach((thumb) => {
 });
 // ---------------------------------------------------------------------------------------------------------------------------------------
 // NAVIGATION BAR 
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-list");
+// const menuToggle = document.querySelector(".menu-toggle");
+// const navMenu = document.querySelector(".nav-list");
 
-menuToggle.addEventListener("click", ()=>{
-    navMenu.classList.toggle("active");
-});
+// menuToggle.addEventListener("click", ()=>{
+//     navMenu.classList.toggle("active");
+// });
 
 
-// Ændret, så den bruger `navMenu` i stedet for at oprette en ny variabel
-window.addEventListener("scroll", (e)=>{
-    // console.log(e);
-    navMenu.style.backgroundColor = window.scrollY > 50 ? "#000" : "#777777";
-});
+// // Ændret, så den bruger `navMenu` i stedet for at oprette en ny variabel
+// window.addEventListener("scroll", (e)=>{
+//     // console.log(e);
+//     navMenu.style.backgroundColor = window.scrollY > 50 ? "#000" : "#777777";
+// });
 
-const fadeElements = document.querySelectorAll(".fade-in");
-const fadeInOnScroll = () => {
-    fadeElements.forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
-            el.classList.add("show");
-        }
-    });
-};
+// const fadeElements = document.querySelectorAll(".fade-in");
+// const fadeInOnScroll = () => {
+//     fadeElements.forEach(el => {
+//         if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
+//             el.classList.add("show");
+//         }
+//     });
+// };
 
-window.addEventListener("scroll", fadeInOnScroll);
-fadeInOnScroll();
+// window.addEventListener("scroll", fadeInOnScroll);
+// fadeInOnScroll();
 //---------------------------------------------------------------------------------------------------------------------------------------
 // COOKIES ------------------------------------------------------------------------------------------------------------------------------
-document.addEventListener("DOMContentLoaded", function () {
     const cookiePopup = document.getElementById("cookiePopup");
     const overlay = document.getElementById("overlay");
     const acceptButton = document.getElementById("acceptCookies");
@@ -77,5 +76,4 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "https://www.google.com"; // Ændr til din ønskede URL
         }
     }, 5000); // 5 sekunder
-});
 //----------------------------------------------------------------------------------------------------------------------------------------
