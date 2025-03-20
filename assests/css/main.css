@@ -1,3 +1,119 @@
 /* MAIN STYLING  */
+/* IMPORTS */
 @import url(cookie.css);
 @import url(navbar.css);
+/* IMPORTS A "GOOGLE FONT" FROM THE GOOGLE SERVERS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;600;700;800&display=swap');
+/* #region GLOBAL STYLES */
+/* "SMOOTH SCROLLING" ON PAGE: */
+html{
+    scroll-behavior: smooth;
+}
+/* VARIABLES IN HTML: */
+:root {
+    --light: #efefef;
+    --dark: #343434;
+    --headings: #63bddd;
+    --primary: #4aaacc;
+    --secondary: #cacad2;
+    --warning: #dd4111;
+    --success: #449955;
+}
+
+/* START OF "ELEMENT - STYLING" */
+body{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* GLOBAL BLOCKS */
+.container-main{
+    max-width: 1300px;
+    margin: auto;
+    border: 1px solid var(--dark);
+}
+
+/* TEXT FORMATTING */
+h1, h2, h3, h4, h5, h6{
+    margin: 0.5rem 0 0 1rem;   /* NOTICE DIFFERENCE BETWEEN EM AND REM? */
+    font-weight: 400;
+}
+/* #endregion */
+/* #region MAIN HEADER */
+.header-main{
+    background-color: var(--light);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+/* #endregion */
+/* #region FOOTER MAIN */
+.footer-main{
+    background-color: var(--secondary);
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark);
+}
+.footer-main{
+    position: absolute;
+    bottom: 0;
+    width: 99.50%;
+    padding: 1rem 0;
+    color: var(--white);
+    }
+/* #endregion */
+/* #region GALLERY */
+#carGallery {
+    display: flex;
+    gap: 10px;
+    
+}
+#thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+#bigimage, #thumbs{
+    height: 600px;
+    width: 400px;
+    border: 2px solid #333;
+}
+#thumbs img, #big{
+    cursor: pointer;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#thumbs img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVT DESIGN */
+@media (max-width: 600px) {
+    #carGallery {
+        display: flex;
+        gap: 5px;
+    }
+    
+    #thumbs {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    }
+
+    #thumbs img {
+        height: 600px;
+        width: 400px;
+        border: 2px solid #333;
+    }
+
+    #bigimage img {
+        width: 100%;
+    }
+}
+/* endregion */

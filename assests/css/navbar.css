@@ -1,1 +1,25 @@
 /* GLOAL NAVIGATION BAR  */
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    margin: 0;
+    padding: 0;
+}
+.nav-main ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-main li a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.nav-main li a:hover {
+    background-color: var(--primary);
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+}
