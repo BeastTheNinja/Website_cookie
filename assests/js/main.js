@@ -97,7 +97,7 @@ thumbs.forEach((thumb) => {
     // Hvis ingen valg er truffet, omdirigér
     setTimeout(() => {
         if (!localStorage.getItem("cookiePreference")) {
-            window.location.href = "https://www.google.com"; // Ændr til din ønskede URL
+            window.location.href = "https://en.wikipedia.org/wiki/Cookie_Monster"; // Ændr til din ønskede URL
         }
     }, 500000); // 5 minutter
 //----------------------------------------------------------------------------------------------------------------------------------------
