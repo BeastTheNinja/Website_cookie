@@ -1,18 +1,6 @@
 // MAIN CODING
 // ---------------------------------------------------------------------------------------------------------------------------------------
-// Gallery
-const thumbs = document.querySelectorAll("#thumps img");
-const bigImage = document.querySelector("#big");
-
-thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", function (e) {
-        let tempSrc = bigImage.src;
-        bigImage.src = e.target.src;
-        e.target.src = tempSrc;
-    });
-});
-// ---------------------------------------------------------------------------------------------------------------------------------------
-// NAVIGATION BAR 
+// NAVIGATION BAR ------------------------------------------------------------------------------------------------------------------------
 // const menuToggle = document.querySelector(".menu-toggle");
 // const navMenu = document.querySelector(".nav-list");
 
@@ -38,6 +26,18 @@ thumbs.forEach((thumb) => {
 
 // window.addEventListener("scroll", fadeInOnScroll);
 // fadeInOnScroll();
+// Gallery
+const thumbs = document.querySelectorAll("#thumps img");
+const bigImage = document.querySelector("#big");
+
+thumbs.forEach((thumb) => {
+    thumb.addEventListener("click", function (e) {
+        let tempSrc = bigImage.src;
+        bigImage.src = e.target.src;
+        e.target.src = tempSrc;
+    });
+});
+// ---------------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------------
 // COOKIES ------------------------------------------------------------------------------------------------------------------------------
     // Henter de nødvendige HTML-elementer ved hjælp af document.getElementById(), så vi kan manipulere dem senere.
@@ -99,5 +99,5 @@ thumbs.forEach((thumb) => {
         if (!localStorage.getItem("cookiePreference")) {
             window.location.href = "https://en.wikipedia.org/wiki/Cookie_Monster"; // Ændr til din ønskede URL
         }
-    }, 5000000); // 5 sekunder
+    }, 15000);
 //----------------------------------------------------------------------------------------------------------------------------------------
